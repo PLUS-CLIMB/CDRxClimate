@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# folders and files
+# no mobility data is stored in the repo, so ignore all mobility data files
+
+# Ignore the nested mobility data folder
+cdrxclimate/cdr_test/mobility_data/
+
+# Ignore the Senegal movements folder
+cdrxclimate/movements-odmatrix-senegal-main/
+
+cdrxclimate/senegal-duckdb-maplibre-dashboard/
+cdrxclimate/senegal-maplibre-pmtiles-timeslider-dashboard/
+sah_admin0_ocha/
+sah_pplp/

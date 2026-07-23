@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1ba8ee87bfc60bb858cb4de1ce8a480d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1ba8ee87bfc60bb858cb4de1ce8a480d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1ba8ee87bfc60bb858cb4de1ce8a480d = L.map(
+                "map_1ba8ee87bfc60bb858cb4de1ce8a480d",
+                {
+                    center: [14.5, -14.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6335263bf578249ef32d9bb2233fc518 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6335263bf578249ef32d9bb2233fc518.addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            var poly_line_052dd09c0153277a06cf0aeab171a099 = L.polyline(
+                [[14.854302985197794, -15.871610972353505], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 9.0}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_052dd09c0153277a06cf0aeab171a099.bindTooltip(
+                `<div>
+                     Touba → Dakar<br>departures: 211,871
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_558bbe9c93ec7855ab22513440228f9b = L.polyline(
+                [[14.790788803150887, -16.926520008626483], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4.235537099151063}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_558bbe9c93ec7855ab22513440228f9b.bindTooltip(
+                `<div>
+                     Thiès → Dakar<br>departures: 85,690
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9ea3002d83febd1883b0591a39df6d21 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.790788803150887, -16.926520008626483]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.8420087574568336}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_9ea3002d83febd1883b0591a39df6d21.bindTooltip(
+                `<div>
+                     Dakar → Thiès<br>departures: 75,267
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7dbac325db171e57bef7aea4003c6198 = L.polyline(
+                [[12.571765802585508, -16.27412452415705], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.8296757449161642}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_7dbac325db171e57bef7aea4003c6198.bindTooltip(
+                `<div>
+                     Ziguinchor → Dakar<br>departures: 74,941
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f13cf2a24b50bf5987e02305756bab12 = L.polyline(
+                [[14.1446096747521, -16.069064145737485], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.8197181997169487}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_f13cf2a24b50bf5987e02305756bab12.bindTooltip(
+                `<div>
+                     Kaolack → Dakar<br>departures: 74,677
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_24e41b861eb0262aa38f19c9cfe5e32b = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.854302985197794, -15.871610972353505]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.3959223363334736}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_24e41b861eb0262aa38f19c9cfe5e32b.bindTooltip(
+                `<div>
+                     Dakar → Touba<br>departures: 63,453
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_755a562026cf4d86c79e19771742591b = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.41857336067268, -16.95919827510236]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.370080665322596}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_755a562026cf4d86c79e19771742591b.bindTooltip(
+                `<div>
+                     Dakar → MBour<br>departures: 62,769
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a1d70f40a1529a3902ae5b632414b866 = L.polyline(
+                [[14.792484650963388, -16.719280437422114], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.3634853161304417}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_a1d70f40a1529a3902ae5b632414b866.bindTooltip(
+                `<div>
+                     Thienaba-rural → Dakar<br>departures: 62,594
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4a617e6fd92313f9c82bb824e6e6ebb9 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.1446096747521, -16.069064145737485]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.0588841603205545}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_4a617e6fd92313f9c82bb824e6e6ebb9.bindTooltip(
+                `<div>
+                     Dakar → Kaolack<br>departures: 54,527
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2c0f67ee4f7786563d5fd587571c0dd8 = L.polyline(
+                [[14.41857336067268, -16.95919827510236], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.0580847953912023}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_2c0f67ee4f7786563d5fd587571c0dd8.bindTooltip(
+                `<div>
+                     MBour → Dakar<br>departures: 54,506
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1100ff6ec4dfecc8c0e5499f959920ed = L.polyline(
+                [[14.7030681671423, -16.443011753861875], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.8372531558502345}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_1100ff6ec4dfecc8c0e5499f959920ed.bindTooltip(
+                `<div>
+                     Bambey → Dakar<br>departures: 48,658
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ae57f2b2cdb5b6cf4cf2690e9ad2bd3b = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [12.571765802585508, -16.27412452415705]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.7795484252522393}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_ae57f2b2cdb5b6cf4cf2690e9ad2bd3b.bindTooltip(
+                `<div>
+                     Dakar → Ziguinchor<br>departures: 47,129
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_669b96c10a93db5be9851d9f6f020f1f = L.polyline(
+                [[16.004577916544033, -16.487368244419084], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.6960629672806373}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_669b96c10a93db5be9851d9f6f020f1f.bindTooltip(
+                `<div>
+                     Saint-Louis → Dakar<br>departures: 44,918
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cf68266f76b3d1e4d44d9afb3d9276a9 = L.polyline(
+                [[16.28864847760594, -14.68424936789841], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.6954168495468216}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_cf68266f76b3d1e4d44d9afb3d9276a9.bindTooltip(
+                `<div>
+                     Gamadji Sarre-rural → Dakar<br>departures: 44,901
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d26aa3cec1d4fbc16936edd5ca4d52a4 = L.polyline(
+                [[15.948462213388455, -16.3623799928374], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.596479109427631}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_d26aa3cec1d4fbc16936edd5ca4d52a4.bindTooltip(
+                `<div>
+                     Rao-rural → Dakar<br>departures: 42,281
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4bc16cd948c68a2134c8a37e9f2bf328 = L.polyline(
+                [[14.845315202125516, -12.997688015147565], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.556738691198335}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_4bc16cd948c68a2134c8a37e9f2bf328.bindTooltip(
+                `<div>
+                     Orkadiere-rural → Dakar<br>departures: 41,229
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_329452c4ff9e5ae2d819d09b72f05385 = L.polyline(
+                [[14.653978964405285, -16.234379372375347], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.5293385923116265}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_329452c4ff9e5ae2d819d09b72f05385.bindTooltip(
+                `<div>
+                     Diourbel → Dakar<br>departures: 40,503
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_22dd18d62b8a808f5490c1c7af10c2bd = L.polyline(
+                [[15.583347969726132, -13.442366849789623], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.516598119361606}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_22dd18d62b8a808f5490c1c7af10c2bd.bindTooltip(
+                `<div>
+                     Ogo-rural → Dakar<br>departures: 40,165
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_dcc0d769c344bac234cd97413432c226 = L.polyline(
+                [[13.777171701540661, -13.669815374504186], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.4350729127716315}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_dcc0d769c344bac234cd97413432c226.bindTooltip(
+                `<div>
+                     Tambacounda → Dakar<br>departures: 38,006
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c5344681baa750fde1599d410fef1352 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [16.004577916544033, -16.487368244419084]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.3805765744572467}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_c5344681baa750fde1599d410fef1352.bindTooltip(
+                `<div>
+                     Dakar → Saint-Louis<br>departures: 36,563
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_68fbd1def7346fbd5368664352b61173 = L.polyline(
+                [[13.7302459941934, -16.393556887596404], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.370957328895142}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_68fbd1def7346fbd5368664352b61173.bindTooltip(
+                `<div>
+                     Toubacouta-rural → Dakar<br>departures: 36,308
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_41ad288a6fdf90a8981725e615949a37 = L.polyline(
+                [[14.03221959609551, -16.3709472457987], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.259041683048922}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_41ad288a6fdf90a8981725e615949a37.bindTooltip(
+                `<div>
+                     Djilor-rural → Dakar<br>departures: 33,344
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_770561ab11f988f0e2ca041f0f5422a8 = L.polyline(
+                [[14.812815426370411, -16.46457198781171], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.205966791100943}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_770561ab11f988f0e2ca041f0f5422a8.bindTooltip(
+                `<div>
+                     Lambaye-rural → Dakar<br>departures: 31,939
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f1dcf7e6a9264e45d41004ab7e1bb55d = L.polyline(
+                [[15.781588327380693, -13.769828573401051], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.1841529127828454}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_f1dcf7e6a9264e45d41004ab7e1bb55d.bindTooltip(
+                `<div>
+                     Agnam Civol-rural → Dakar<br>departures: 31,361
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6b83087ac0ef0123d128a5e0505d5e9e = L.polyline(
+                [[14.571325031507806, -17.02176888123551], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.1625531731382024}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_6b83087ac0ef0123d128a5e0505d5e9e.bindTooltip(
+                `<div>
+                     Sindia-rural → Dakar<br>departures: 30,789
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d02b1c50a5b63cd70d13fec4859eba48 = L.polyline(
+                [[12.921697093445957, -14.908499964373664], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.1362025947934598}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_d02b1c50a5b63cd70d13fec4859eba48.bindTooltip(
+                `<div>
+                     Kolda → Dakar<br>departures: 30,091
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a6bced599baab8ffd09b86f8645549ac = L.polyline(
+                [[14.751203940759558, -17.187837810800193], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.0483052619837694}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_a6bced599baab8ffd09b86f8645549ac.bindTooltip(
+                `<div>
+                     Dakar-rural → Dakar<br>departures: 27,763
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_898905bb764a1ba2977a3496168a4154 = L.polyline(
+                [[14.313282784677735, -16.402806262268957], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.038750565287839}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_898905bb764a1ba2977a3496168a4154.bindTooltip(
+                `<div>
+                     Fatick → Dakar<br>departures: 27,510
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_502d7e81add517d4b3c616bb20b075c3 = L.polyline(
+                [[14.39176017648268, -16.537579100572426], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.0376928116254476}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_502d7e81add517d4b3c616bb20b075c3.bindTooltip(
+                `<div>
+                     Tattaguine-rural → Dakar<br>departures: 27,482
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6f648ac37e8bbcf34663c647d7fabea1 = L.polyline(
+                [[15.400154822418806, -16.445102436259237], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.01987801437289}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_6f648ac37e8bbcf34663c647d7fabea1.bindTooltip(
+                `<div>
+                     Sagatta Gueth-rural → Dakar<br>departures: 27,010
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_dbf16bd42c3315f3bf091f501cef8a99 = L.polyline(
+                [[14.767914390647638, -16.70437963112097], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.0066096167636696}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_dbf16bd42c3315f3bf091f501cef8a99.bindTooltip(
+                `<div>
+                     Khombole → Dakar<br>departures: 26,659
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_caa348d6da148a5ea362f045f25d1680 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.751203940759558, -17.187837810800193]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.003774180204566}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_caa348d6da148a5ea362f045f25d1680.bindTooltip(
+                `<div>
+                     Dakar → Dakar-rural<br>departures: 26,584
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_00f9ab3dca7966f759d6c8ab41b666a8 = L.polyline(
+                [[14.965186444595929, -16.812655601536623], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.9945610125356654}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_00f9ab3dca7966f759d6c8ab41b666a8.bindTooltip(
+                `<div>
+                     Tivaouane → Dakar<br>departures: 26,340
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d19d7cb43a9b7dffa370b079a55123fe = L.polyline(
+                [[13.547881227575063, -12.628185336542131], [13.777171701540661, -13.669815374504186]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.9736406099358252}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_d19d7cb43a9b7dffa370b079a55123fe.bindTooltip(
+                `<div>
+                     Dianke Makha-rural → Tambacounda<br>departures: 25,786
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b6557c884558ebf09a373d48259aae19 = L.polyline(
+                [[13.737728336681828, -16.05792786297581], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.9457985650930594}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_b6557c884558ebf09a373d48259aae19.bindTooltip(
+                `<div>
+                     Wack Ngouna-rural → Dakar<br>departures: 25,048
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e7c695926fc9b4108389dc4ff696a888 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [15.583347969726132, -13.442366849789623]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8961029685308972}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_e7c695926fc9b4108389dc4ff696a888.bindTooltip(
+                `<div>
+                     Dakar → Ogo-rural<br>departures: 23,732
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cc37e14ab67ad9394ba17e53f5751966 = L.polyline(
+                [[15.629824602694653, -16.222117854579956], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.887833513134278}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_cc37e14ab67ad9394ba17e53f5751966.bindTooltip(
+                `<div>
+                     Louga → Dakar<br>departures: 23,513
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a1f829750bc03d770b8d5b6419f2507b = L.polyline(
+                [[14.76514181628671, -12.47375092130415], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8838996162734143}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_a1f829750bc03d770b8d5b6419f2507b.bindTooltip(
+                `<div>
+                     Moudery-rural → Dakar<br>departures: 23,409
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0439140d1e541709fcee3acff91cf4f5 = L.polyline(
+                [[15.454156396106734, -15.971154166823862], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.876891665079853}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_0439140d1e541709fcee3acff91cf4f5.bindTooltip(
+                `<div>
+                     Coki-rural → Dakar<br>departures: 23,224
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_564c5b3956aa9b67938ceec5219c9cc7 = L.polyline(
+                [[14.564363315241769, -16.686563781356824], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.874268894961014}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_564c5b3956aa9b67938ceec5219c9cc7.bindTooltip(
+                `<div>
+                     Fissel-rural → Dakar<br>departures: 23,154
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ea8e2926f00cdadc13a37666b754785e = L.polyline(
+                [[13.266305377334186, -15.614487664940146], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8734325565675989}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_ea8e2926f00cdadc13a37666b754785e.bindTooltip(
+                `<div>
+                     Boghal-rural → Dakar<br>departures: 23,132
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ec30af500f08db2a9ba05f94f9d005a4 = L.polyline(
+                [[14.675284441065553, -16.452369937584034], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8719334695709156}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_ec30af500f08db2a9ba05f94f9d005a4.bindTooltip(
+                `<div>
+                     Ngoye-rural → Dakar<br>departures: 23,092
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6c596da1ad48abf05e89a27219691742 = L.polyline(
+                [[15.089856109341447, -16.5420752553609], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.871605792152393}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_6c596da1ad48abf05e89a27219691742.bindTooltip(
+                `<div>
+                     Merina Dakhar-rural → Dakar<br>departures: 23,084
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bf2d2bb397070f5196ac709e25436ee5 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.653978964405285, -16.234379372375347]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.859227868492331}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_bf2d2bb397070f5196ac709e25436ee5.bindTooltip(
+                `<div>
+                     Dakar → Diourbel<br>departures: 22,756
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1a82585fbb3996cff681b01122f6c93d = L.polyline(
+                [[12.796054149566865, -16.214165987814944], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8583252288377605}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_1a82585fbb3996cff681b01122f6c93d.bindTooltip(
+                `<div>
+                     Bignona → Dakar<br>departures: 22,732
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0c57f36d69d457bce2a30eb840f04fc5 = L.polyline(
+                [[14.950638170271667, -16.900807392340386], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8570049462934284}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_0c57f36d69d457bce2a30eb840f04fc5.bindTooltip(
+                `<div>
+                     Pambal-rural → Dakar<br>departures: 22,697
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3a190789100e0744ebb73aad319805a2 = L.polyline(
+                [[14.504064776294289, -16.405606014375756], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8439179561620334}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_3a190789100e0744ebb73aad319805a2.bindTooltip(
+                `<div>
+                     Niakhar-rural → Dakar<br>departures: 22,350
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bcb511408966d952c8216519920a7b9a = L.polyline(
+                [[13.02582862255968, -16.163163665122436], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8252500093851034}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_bcb511408966d952c8216519920a7b9a.bindTooltip(
+                `<div>
+                     Sindian-rural → Dakar<br>departures: 21,856
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a043351710b9872e5e9448cb67bccba6 = L.polyline(
+                [[14.173260097714925, -16.64172870524832], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8189887941803597}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_a043351710b9872e5e9448cb67bccba6.bindTooltip(
+                `<div>
+                     Fimela-rural → Dakar<br>departures: 21,690
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_420ee8168990c502ee60f2d48a626eba = L.polyline(
+                [[15.17695277626459, -13.42658065584344], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8094480778724549}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_420ee8168990c502ee60f2d48a626eba.bindTooltip(
+                `<div>
+                     Ouro Sidy-rural → Dakar<br>departures: 21,437
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_00e8b55d86ebfaa82def3478a519e1cb = L.polyline(
+                [[13.706666517123544, -15.569428818688653], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.7802248806684597}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_00e8b55d86ebfaa82def3478a519e1cb.bindTooltip(
+                `<div>
+                     Medina Sabakh-rural → Dakar<br>departures: 20,663
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c5ca81a48e3240d139b854b31740d21d = L.polyline(
+                [[13.999720136616444, -15.910274997708184], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.7641111841372878}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_c5ca81a48e3240d139b854b31740d21d.bindTooltip(
+                `<div>
+                     Koumbal-rural → Dakar<br>departures: 20,237
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a52667e6acb32b37e7b2d3ec96756c46 = L.polyline(
+                [[12.751051122500456, -16.45355584231457], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.757130454162753}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_a52667e6acb32b37e7b2d3ec96756c46.bindTooltip(
+                `<div>
+                     Tendouck-rural → Dakar<br>departures: 20,052
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_374b491002edb6c83258fa9a3609414e = L.polyline(
+                [[12.530788445529595, -15.756908313422507], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.7531355661187527}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_374b491002edb6c83258fa9a3609414e.bindTooltip(
+                `<div>
+                     Djibanar-rural → Dakar<br>departures: 19,946
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f6c8f816656e7f5981df36d4fe758b30 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.965186444595929, -16.812655601536623]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.7454841380497137}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_f6c8f816656e7f5981df36d4fe758b30.bindTooltip(
+                `<div>
+                     Dakar → Tivaouane<br>departures: 19,743
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_067b0570e53d99e9797a6667dfb8bb99 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [16.28864847760594, -14.68424936789841]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.7387922487587035}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_067b0570e53d99e9797a6667dfb8bb99.bindTooltip(
+                `<div>
+                     Dakar → Gamadji Sarre-rural<br>departures: 19,566
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_04f290aa6bf5dd391d5c2ca86ff91878 = L.polyline(
+                [[16.23957129553377, -14.22922044571517], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.7214570368483715}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_04f290aa6bf5dd391d5c2ca86ff91878.bindTooltip(
+                `<div>
+                     Cas Cas-rural → Dakar<br>departures: 19,107
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2577f70cb994ddfffe1cbb7d2d76251e = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [12.921697093445957, -14.908499964373664]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.709490113407007}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_2577f70cb994ddfffe1cbb7d2d76251e.bindTooltip(
+                `<div>
+                     Dakar → Kolda<br>departures: 18,790
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7d186c00914e243f9a72e01005b38a46 = L.polyline(
+                [[15.948462213388455, -16.3623799928374], [16.004577916544033, -16.487368244419084]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.705909288594428}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_7d186c00914e243f9a72e01005b38a46.bindTooltip(
+                `<div>
+                     Rao-rural → Saint-Louis<br>departures: 18,695
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e100893cb17ef59bc253bfa914f3a305 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [15.629824602694653, -16.222117854579956]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.7001403916842142}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_e100893cb17ef59bc253bfa914f3a305.bindTooltip(
+                `<div>
+                     Dakar → Louga<br>departures: 18,542
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d622fd4989d31f20543879b1dfa61865 = L.polyline(
+                [[14.344717985586184, -16.783964878615077], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6947896226584995}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_d622fd4989d31f20543879b1dfa61865.bindTooltip(
+                `<div>
+                     Sessene-rural → Dakar<br>departures: 18,401
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_18d09d359319e82390a0866acdfc18aa = L.polyline(
+                [[14.638634023836024, -16.892608009477943], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6898929083702194}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_18d09d359319e82390a0866acdfc18aa.bindTooltip(
+                `<div>
+                     Notto-rural → Dakar<br>departures: 18,271
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fecd0e6fa9522fd7393403f25af6d51a = L.polyline(
+                [[16.004577916544033, -16.487368244419084], [15.948462213388455, -16.3623799928374]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6749035998947615}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_fecd0e6fa9522fd7393403f25af6d51a.bindTooltip(
+                `<div>
+                     Saint-Louis → Rao-rural<br>departures: 17,874
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_52fb0352102246f3f66270bae4cb5e41 = L.polyline(
+                [[14.638634023836024, -16.892608009477943], [14.790788803150887, -16.926520008626483]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.673640082065437}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_52fb0352102246f3f66270bae4cb5e41.bindTooltip(
+                `<div>
+                     Notto-rural → Thiès<br>departures: 17,841
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_78989fd0edf8197af64f1363e13db80c = L.polyline(
+                [[13.753995619138873, -15.811204430565182], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.668397984012871}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_78989fd0edf8197af64f1363e13db80c.bindTooltip(
+                `<div>
+                     Paos Koto-rural → Dakar<br>departures: 17,702
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_350722faad461831b69a4e37471e40b9 = L.polyline(
+                [[14.879623163072116, -15.994905062849245], [14.854302985197794, -15.871610972353505]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6636753117004195}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_350722faad461831b69a4e37471e40b9.bindTooltip(
+                `<div>
+                     Ndame-rural → Touba<br>departures: 17,577
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a8560063b1c8474699c0c1c05ae93539 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [13.777171701540661, -13.669815374504186]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6633251018743196}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_a8560063b1c8474699c0c1c05ae93539.bindTooltip(
+                `<div>
+                     Dakar → Tambacounda<br>departures: 17,567
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_abe6abd077e06c198ca668cbd3a01c3f = L.polyline(
+                [[14.464748607946479, -16.05895157696231], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6591452803825342}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_abe6abd077e06c198ca668cbd3a01c3f.bindTooltip(
+                `<div>
+                     Ouadiour-rural → Dakar<br>departures: 17,457
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_82ba0d5416c727c836f57c3c5c7777b8 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [15.948462213388455, -16.3623799928374]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.657362857157155}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_82ba0d5416c727c836f57c3c5c7777b8.bindTooltip(
+                `<div>
+                     Dakar → Rao-rural<br>departures: 17,410
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fd2bc4cb98239cc84c08ea290f3f96e2 = L.polyline(
+                [[15.81251674158453, -14.203296064736243], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6512703604380372}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_fd2bc4cb98239cc84c08ea290f3f96e2.bindTooltip(
+                `<div>
+                     Salde-rural → Dakar<br>departures: 17,248
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_96da76014ac3d8fff74b82742749905c = L.polyline(
+                [[14.571325031507806, -17.02176888123551], [14.41857336067268, -16.95919827510236]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6500254158885372}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_96da76014ac3d8fff74b82742749905c.bindTooltip(
+                `<div>
+                     Sindia-rural → MBour<br>departures: 17,215
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3550cd9f59e6801074af980d862f8e36 = L.polyline(
+                [[14.340472585363264, -15.933526862542031], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6483359546478418}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_3550cd9f59e6801074af980d862f8e36.bindTooltip(
+                `<div>
+                     Nguelou-rural → Dakar<br>departures: 17,170
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_148fbb6bccd4b70ba0d94317c57f04e2 = L.polyline(
+                [[16.26335082305033, -16.09344114288778], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6395980595961421}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_148fbb6bccd4b70ba0d94317c57f04e2.bindTooltip(
+                `<div>
+                     Ndiaye Mberess-rural → Dakar<br>departures: 16,939
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4cdc74115dc6b46978b61c4471ff4d03 = L.polyline(
+                [[14.854302985197794, -15.871610972353505], [14.653978964405285, -16.234379372375347]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6387645254472434}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_4cdc74115dc6b46978b61c4471ff4d03.bindTooltip(
+                `<div>
+                     Touba → Diourbel<br>departures: 16,917
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_50ff459651baade71664db8a0e937e6c = L.polyline(
+                [[14.854302985197794, -15.871610972353505], [14.790788803150887, -16.926520008626483]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6330159068609986}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_50ff459651baade71664db8a0e937e6c.bindTooltip(
+                `<div>
+                     Touba → Thiès<br>departures: 16,765
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1ad6cb147f28128a4404e6b796249627 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.792484650963388, -16.719280437422114]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6219620950704403}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_1ad6cb147f28128a4404e6b796249627.bindTooltip(
+                `<div>
+                     Dakar → Thienaba-rural<br>departures: 16,472
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fab2b79ef7842703942c7af2ed852b60 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.571325031507806, -17.02176888123551]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6206495069437379}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_fab2b79ef7842703942c7af2ed852b60.bindTooltip(
+                `<div>
+                     Dakar → Sindia-rural<br>departures: 16,437
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a34ddf0e4683d0e9fa54f4856ecfff5a = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.845315202125516, -12.997688015147565]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6166196391991785}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_a34ddf0e4683d0e9fa54f4856ecfff5a.bindTooltip(
+                `<div>
+                     Dakar → Orkadiere-rural<br>departures: 16,330
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9fa57c6f404eeaa4dc9df5759f6b261d = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.76514181628671, -12.47375092130415]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6136381693184454}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_9fa57c6f404eeaa4dc9df5759f6b261d.bindTooltip(
+                `<div>
+                     Dakar → Moudery-rural<br>departures: 16,252
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b5143bf8f35c7c648bad4a6714b6c0ec = L.polyline(
+                [[15.180526998338541, -15.955681663037064], [14.854302985197794, -15.871610972353505]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.601669363757623}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_b5143bf8f35c7c648bad4a6714b6c0ec.bindTooltip(
+                `<div>
+                     Darou Mousty-rural → Touba<br>departures: 15,935
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_79b6536e8b54a6850d583cfa9e2408ae = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.313282784677735, -16.402806262268957]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5951410969472035}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_79b6536e8b54a6850d583cfa9e2408ae.bindTooltip(
+                `<div>
+                     Dakar → Fatick<br>departures: 15,762
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c7a5e5299d2072772286ea189b6395a4 = L.polyline(
+                [[14.437820771208814, -16.28343742646598], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5855554026795453}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_c7a5e5299d2072772286ea189b6395a4.bindTooltip(
+                `<div>
+                     Ndiob-rural → Dakar<br>departures: 15,508
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_56a648978dc096beea6f2812c6b226bc = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [12.796054149566865, -16.214165987814944]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5829625415784898}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_56a648978dc096beea6f2812c6b226bc.bindTooltip(
+                `<div>
+                     Dakar → Bignona<br>departures: 15,439
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_39f5fb8ff6bb9fb154ed0fa8124a6a73 = L.polyline(
+                [[13.894439482328567, -15.334499189856778], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5827504206403145}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_39f5fb8ff6bb9fb154ed0fa8124a6a73.bindTooltip(
+                `<div>
+                     Katakel-rural → Dakar<br>departures: 15,434
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b23c612901c99ebb908207fb48308876 = L.polyline(
+                [[14.900077097438396, -16.227091315352805], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5722556691314}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_b23c612901c99ebb908207fb48308876.bindTooltip(
+                `<div>
+                     Ndindy-rural → Dakar<br>departures: 15,156
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0e9e9dde09a017f88968f03c69a56585 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [14.173260097714925, -16.64172870524832]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.566550209926313}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_0e9e9dde09a017f88968f03c69a56585.bindTooltip(
+                `<div>
+                     Dakar → Fimela-rural<br>departures: 15,004
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_57f584f311a93085d36afe36a1896962 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [13.7302459941934, -16.393556887596404]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5594364280909028}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_57f584f311a93085d36afe36a1896962.bindTooltip(
+                `<div>
+                     Dakar → Toubacouta-rural<br>departures: 14,816
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4766e0a67f03b2ef27acd877f8dc883b = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [15.781588327380693, -13.769828573401051]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5510398368312082}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_4766e0a67f03b2ef27acd877f8dc883b.bindTooltip(
+                `<div>
+                     Dakar → Agnam Civol-rural<br>departures: 14,594
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_31773cdcc2a140fd18763f82fdc4e8f3 = L.polyline(
+                [[15.131777192616767, -16.90652860371226], [14.854302985197794, -15.871610972353505]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5500734323447722}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_31773cdcc2a140fd18763f82fdc4e8f3.bindTooltip(
+                `<div>
+                     Mboro → Touba<br>departures: 14,568
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e4cd29aa1287ef8e0d3126d0700f4632 = L.polyline(
+                [[15.589926352674981, -14.961250425213123], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5460673664554396}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_e4cd29aa1287ef8e0d3126d0700f4632.bindTooltip(
+                `<div>
+                     Dodji-rural → Dakar<br>departures: 14,462
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cf7d22a1ae6d2b09a5989a4ed2c9cddf = L.polyline(
+                [[14.792484650963388, -16.719280437422114], [14.790788803150887, -16.926520008626483]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5367531903516816}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_cf7d22a1ae6d2b09a5989a4ed2c9cddf.bindTooltip(
+                `<div>
+                     Thienaba-rural → Thiès<br>departures: 14,215
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c2de30bcfbadea4800772a48dd0beeb5 = L.polyline(
+                [[14.748212131361619, -17.35134885171715], [16.26335082305033, -16.09344114288778]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5359462337773808}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_c2de30bcfbadea4800772a48dd0beeb5.bindTooltip(
+                `<div>
+                     Dakar → Ndiaye Mberess-rural<br>departures: 14,194
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_632dca2b492840ae5d68a7e554282216 = L.polyline(
+                [[15.810779027723635, -15.859257054993268], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5349212259471905}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_632dca2b492840ae5d68a7e554282216.bindTooltip(
+                `<div>
+                     Meur Momar Sarr-rural → Dakar<br>departures: 14,167
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4334085ad5409533e29be47f7c7a3767 = L.polyline(
+                [[12.881215726902061, -14.498732729937123], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5340446058596937}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_4334085ad5409533e29be47f7c7a3767.bindTooltip(
+                `<div>
+                     Mampatim-rural → Dakar<br>departures: 14,144
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_78876dc28407f7e6d11ac57c1a26bb7d = L.polyline(
+                [[12.764069299636077, -14.928965968732962], [12.921697093445957, -14.908499964373664]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5322706727107938}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_78876dc28407f7e6d11ac57c1a26bb7d.bindTooltip(
+                `<div>
+                     Dioulacolon-rural → Kolda<br>departures: 14,097
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_953a538456e62adecd162509de69e1aa = L.polyline(
+                [[13.016435139661443, -15.801618361978242], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5228086162965933}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_953a538456e62adecd162509de69e1aa.bindTooltip(
+                `<div>
+                     Bona-rural → Dakar<br>departures: 13,846
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d0304c4ce6f9f975e7723a00325dacf5 = L.polyline(
+                [[14.854302985197794, -15.871610972353505], [14.1446096747521, -16.069064145737485]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5200457185351626}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_d0304c4ce6f9f975e7723a00325dacf5.bindTooltip(
+                `<div>
+                     Touba → Kaolack<br>departures: 13,773
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a269eb10b59ad3b2c2ede8c275fb8044 = L.polyline(
+                [[13.749477344493476, -15.774149186591556], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5077705691541698}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_a269eb10b59ad3b2c2ede8c275fb8044.bindTooltip(
+                `<div>
+                     Nioro du Rip → Dakar<br>departures: 13,448
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2f66d48f01290451c5bfe4d89ecc9e3e = L.polyline(
+                [[14.344717985586184, -16.783964878615077], [14.41857336067268, -16.95919827510236]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.507763811461734}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_2f66d48f01290451c5bfe4d89ecc9e3e.bindTooltip(
+                `<div>
+                     Sessene-rural → MBour<br>departures: 13,448
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c85db417d068678ceb55a5b074283e6a = L.polyline(
+                [[13.132113830053752, -13.783008711792304], [14.748212131361619, -17.35134885171715]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5072263744410856}
+            ).addTo(map_1ba8ee87bfc60bb858cb4de1ce8a480d);
+        
+    
+            poly_line_c85db417d068678ceb55a5b074283e6a.bindTooltip(
+                `<div>
+                     Madina Gounass → Dakar<br>departures: 13,433
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

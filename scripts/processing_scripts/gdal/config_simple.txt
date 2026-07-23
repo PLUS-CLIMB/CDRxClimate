@@ -1,0 +1,15 @@
+# GDAL Simple Preprocessing Configuration
+
+# Input folder containing NetCDF files (recursively searched)
+input_folder=../../../test/test_data
+
+output_folder=../../../test/outputs/gdal_simple
+
+# Reference grid file (optional, not used in current implementation)
+grid_file=grid_simple.txt
+
+# CDO grid file for remapping
+cdo_grid_file=./cdo_grid.txt
+
+# Log file name (stored in output_folder)
+logfile=processing.log
