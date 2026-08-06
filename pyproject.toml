@@ -1,5 +1,5 @@
 [project]
-name = "dvcube"
+name = "CDRxclimate"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -14,9 +14,11 @@ dependencies = [
     "flox>=0.11.2",
     "folium>=0.20.0",
     "geopandas>=1.1.1",
+    "geoparquet-io>=1.2.0",
     "h5netcdf>=1.6.4",
     "holoviews>=1.22.1",
     "lexcube>=1.0.3",
+    "marimo[recommended]>=0.23.16",
     "matplotlib>=3.10.6",
     "matplotlib-inline>=0.2.1",
     "mplcursors>=0.7.1",
@@ -24,6 +26,8 @@ dependencies = [
     "numcodecs>=0.16.5",
     "numpy>=2.2.6",
     "pandas>=2.3.2",
+    "plotly>=6.9.0",
+    "polars>=1.43.1",
     "psutil>=5.9.0",
     "pyarrow>=24.0.0",
     "pydeck>=0.9.2",
