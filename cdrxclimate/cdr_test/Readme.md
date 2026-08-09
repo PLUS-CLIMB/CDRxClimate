@@ -25,4 +25,5 @@ What I want to see is
 - Highlight both the origin and the destination
 - The highlight in all maps for climate and other variables as well
 - Std. the variables to bring them to same scale for comparison.
+- Add slider or option to click on a state and you see movement and nearest neighbors.
 
